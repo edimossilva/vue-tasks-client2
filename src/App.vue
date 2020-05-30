@@ -1,22 +1,11 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
-    <login></login>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Login from "./components/login/Login";
-
 export default {
-  name: "app",
-  components: {
-    login: Login
-  },
-  data() {
-    return {
-      msg: "Welcome to Pos FAP"
-    };
-  }
+  name: "app"
 };
 </script>
