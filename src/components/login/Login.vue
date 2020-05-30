@@ -26,7 +26,7 @@ export default {
   methods: {
     doLogin(username, password) {
       doLoginApi(username, password).then(
-        result => console.log(result.data),
+        result => (localStorage.token = result.data.token),
         error => console.log(error.response.data.error_message)
       );
     }
