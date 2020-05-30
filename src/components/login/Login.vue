@@ -9,6 +9,7 @@
       <label>Password:</label>
       <input type="password" autocomplete="new-password" />
     </div>
+    <button>Login</button>
   </div>
 </template>
 
